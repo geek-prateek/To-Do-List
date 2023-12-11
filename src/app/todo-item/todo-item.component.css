@@ -1,0 +1,19 @@
+.strike{
+    text-decoration: line-through;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.delete{
+    color: red;
+    border: none;
+}
+
+.checkbox{
+    border: 1px solid blue;
+}

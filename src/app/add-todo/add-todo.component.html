@@ -1,0 +1,26 @@
+
+      <p class="open d-inline-flex gap-1">
+        <a class="btn btn-sm btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <span>Add New Todo</span>
+          <i class="ms-2 bi bi-plus-circle-fill"></i>
+        </a>
+      </p>
+      <div class="collapse show" id="collapseExample">
+        <div class="card card-body">
+          <form (ngSubmit)="onSubmit()" #todoForm="ngForm" novalidate>
+            <div class="form-floating mb-3">
+              <input type="text" [(ngModel)]="title" required minlength="3" name="title" class="form-control" id="floatingInput" placeholder="title">
+              <label for="floatingInput" style="color: black;">Title</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" [(ngModel)]="desc" class="form-control" name="desc" id="floatingInput" placeholder="description">
+              <label for="floatingInput" style="color: black;">Description</label>
+            </div>
+            <button type="submit" [disabled]="todoForm.invalid" class="add btn btn-sm btn-primary">Add Todo</button>
+          </form>
+        </div>
+      </div>
+    
+    
+
+
